@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./calculator-2017-10-10.png" type="image/icon type">
+    <script src="script.js"></script>
+    <title>Age calculator</title>
+</head>
+
+<body>
+    <div class="container">
+        <form>
+            <div class="base">
+                <div class="enter"><h4>Age Calculator</h4></div>
+                <div class="block">
+                    <p class="title">Date</p>
+                    <br>
+                    <input
+                        type="text"
+                        name="date"
+                        id="date"
+                        placeholder="dd"
+                        required="required"
+                        minlength="1"
+                        maxlength="2"
+                    />
+                </div>
+                <div class="block">
+                    <p class="title">Month</p>
+                    <br>
+                    <input
+                        type="text"
+                        name="month"
+                        id="month"
+                        placeholder="mm"
+                        required="required"
+                        minlength="1"
+                        maxlength="2"
+                    />
+                </div>
+                <div class="block">
+                    <p class="title">Year</p>
+                    <br>
+                    <input
+                        type="text"
+                        name="year"
+                        id="year"
+                        placeholder="yyyy"
+                        required="required"
+                        minlength="4"
+                        maxlength="4"
+                    />
+                </div>
+            </div>
+            <div class="base">
+                <div class="enter">
+                    <input
+                        type="button"
+                        name="submit"
+                        value="Submit"
+                        onclick="age()"
+                    />
+                </div>
+            </div>
+            <div id="age"></div>
+        </form>
+    </div>
+</body>
+</html>
